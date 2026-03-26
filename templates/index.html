@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h1>BIENVENIDOS A MI BLOG PERSONAL: Compartiendo Conocimiento y Desarrollo</h1>
+{% for post in posts %}
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.content }}</p>
+    <small>Por Leonardo Zapa {{ post.author }}</small>
+    <a href="/post/{{ post.id }}">Leer mas</a>
+    <hr>
+{% endfor %}
+{% endblock %}
