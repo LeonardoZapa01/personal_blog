@@ -26,4 +26,4 @@ def post_detail(post_id):
     return "<h1>Post Not Found</h1>", 404
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
